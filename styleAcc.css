@@ -1,0 +1,268 @@
+* {
+    margin:0;
+    padding:0;
+    font-family:'Lato', sans-serif;
+}
+
+/*Barre de navigation*/
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(Photos/background3.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    height: 60px; 
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px 30px;
+    position: relative
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px; 
+}
+
+.nav-links ul li::after {
+    content: '';
+    width:0%;
+    height:2px;
+    background:white;
+    display:block;
+    margin:auto;
+}
+
+.nav-links ul li:hover::after {
+    width:100%;
+}
+
+/*Texte*/
+
+#p0 {
+    position: absolute;
+    color: white;
+    z-index: 5;
+    top: 10px;
+    left: 15px;
+}
+
+
+#p2 {
+    position: absolute;
+    color:white;
+    font-size: 35px;
+    text-align: center;
+    top:20%;
+    left: 35%;
+    padding: 10px;
+    text-shadow: #000 3px 3px 3px;
+    -webkit-font-smoothing: antialiased;
+}
+
+#p3 {
+    color:white;
+    font-size: 30px;
+    padding-top: 420px;
+    margin: 100px;
+    margin-top: 150px;
+    margin-bottom: 40px;
+    text-align: center;
+    text-shadow: #000 3px 3px 3px;
+    -webkit-font-smoothing: antialiased;
+}
+
+#rei{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+
+#dreine{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 80px;
+}
+
+#dreine li{
+    list-style: square inside;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#mar{
+    text-align: center;   
+    color: white;
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+
+#dmar{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align:center;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 80px;
+}
+
+#dmar li{
+    list-style: square inside;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+/*Boutons*/
+
+#b1 {
+    position: absolute;
+    display: inline-block;
+    border-radius: 4px;
+    background-color:rgb(231, 16, 16);
+    color:white;
+    border: 2px solid #e7e7e7;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    margin: 40px;
+    width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+    top:25%;
+    left:40%  
+}
+
+#b1 a{
+    color: white;
+    text-decoration: none;
+}
+  
+#b1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+#b1 span:after {
+    position: absolute;
+    content: '\00bb';
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+
+}
+  
+#b1:hover span {
+    padding-right: 25px;
+}
+  
+#b1:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+.scrollTop{
+    position: fixed;
+    bottom: 800px;
+    right:40px;
+    width: 60px;
+    height:60px;
+    background: rgb(170, 170, 170) url(Photos/up.png);
+    border-radius: 50%;
+    background-size: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index:100;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    
+}
+
+.scrollTop.active{
+    bottom:40px;
+    visibility: visible;
+    opacity: 1;
+
+}
+
+/*Photos */
+
+#reine{
+    width: 250px;
+    height: 250px;
+    margin: 30px;
+    border-radius: 8px;
+    border: 3px solid #e7e7e7;
+    transition: transform .4s;
+
+}
+
+#reine:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+}
+
+#margherita{
+    width: 250px;
+    height: 250px;
+    margin: 30px;
+    border-radius: 8px;
+    border: 3px solid #e7e7e7;
+    transition: transform .4s;
+
+}
+
+#margherita:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+}
+
+
+.bloc{
+    display: flex;
+    justify-content: center;
+}
+
+/*Pied de page*/
+
+
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+ }
+
+ #f1 {
+    color: white;
+    text-decoration: none;
+ }

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Personalizzata</title>
+    <link rel="stylesheet" href="styleAcc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <navigation menu>
+        <h1 id="p0">Pizza Personalizzata</h1>
+        <nav>     
+            <div class="nav-links">            
+                <ul>
+                    <li><a href="accueil.html">ACCUEIL</a></li>
+                    <li><a href="creation.html">CREATION</a></li>
+                    <li><a href="apropos.html">A PROPOS</a></li>
+                    <li><a href="panier.html">PANIER</a></li>
+                </ul>   
+            </div>
+        </nav>
+    </navigation menu>
+
+    <div class="scrollTop" onclick=scrollToTop()></div>
+    <script type="text/javascript">
+        window.addEventListener("scroll",function(){
+            var scroll = document.querySelector(".scrollTop");
+            scroll.classList.toggle("active",window.scrollY > 500)
+        })
+        function scrollToTop(){
+            window.scrollTo({
+                top:0,
+                behavior: 'smooth'
+            })
+        }
+    </script>
+    
+
+    <main content>
+        <p id="p2"><strong>Commencez à créer votre pizza</strong></p>
+        <button id="b1" style="vertical-align:middle"><span><a href="creation.html">Créer sa pizza</a></span></button>
+        <p id="p3"> ou choisissez en une préfaite</p>
+
+
+        <div class="bloc">
+            <div>
+                <a href="creation.html?id=1"><img src="Photos/reine.jpg" id="reine"></a>
+                <p id="rei">Reine</p>
+                <div id="dreine">
+                    <ul>
+                        <li>Sauce tomate</li>
+                        <li>Fromage&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+                        <li>Lardons&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+                        <li>Champignons&nbsp</li>
+                    </ul>
+                </div>
+            </div>   
+            <div>             
+                <a href="creation.html?id=2"><img src="Photos/margherita.jpeg" id="margherita"></a>
+                <p id="mar">Margherita</p>
+                <div id="dmar">
+                    <ul>
+                        <li>Sauce tomate</li>
+                        <li>Fromage&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+                    </ul>
+                </div>
+            <div>
+            </div>
+        </div>
+      
+    </main content>
+
+    <footer>
+        
+        <p><h2>Pizza Personalizzata</h2></p><br>
+        <p>84 Piazza San Marco</p><br>
+        <p>30124 Venezia</p><br>
+        <p>Pour votre santé, manger au moins 5 fruits et légumes par jour</p>
+        <a  id="f1" href="https://mangerbouger.fr">www.mangerbouger.fr</a>
+    </footer>
+    
+</body>
+</html>
+

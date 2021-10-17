@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créez votre pizza</title>
+    <link rel="stylesheet" href="styleCrea.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <script src="creation.js"></script> 
+</head>
+<body>
+    <navigation menu>
+        <h1 id="p0">Pizza Personalizzata</h1>
+        <nav>     
+            <div class="nav-links">            
+                <ul>
+                    <li><a href="accueil.html">ACCUEIL</a></li>
+                    <li><a href="creation.html">CREATION</a></li>
+                    <li><a href="apropos.html">A PROPOS</a></li>
+                    <li><a href="panier.html">PANIER</a></li>
+                </ul>   
+            </div>
+        </nav>
+    </navigation menu>
+
+    <main content>
+        <!--
+        <div class="wrap">
+            <div><button class="taille">Moyen</button></div>
+            <div><button class="taille">Grand</button></div>
+            <div><button class="sauce">Tomate</button></div>
+            <div><button class="sauce">Crème</button></div>
+            <div><button class="ingre">Fromage</button></div>
+            <div><button class="ingre">Oignon</button></div>
+            <div><button class="ingre">Poivron</button></div>
+            <div><button class="ingre">Champignon</button></div>
+            <div><button class="ingre">Lardon</button></div>
+            <div><button class="ingre">Pepperoni</button></div>
+        </div>-->
+            
+        <div class="radiobutton">
+            <input type="radio" id="moyen" name="taille" value="moyen">
+            <label for="moyen">Moyen</label>
+            <input type="radio" id="grand" name="taille" value="grand">
+            <label for="grand">Grand</label>
+        </div>
+
+            <!--
+            <label class="container"> Moyen
+                <input type="radio" checked="checked" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Grand
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+            </label>-->
+            
+        <div class="checkboxes">
+            <input type="checkbox" id="tomate" class="sauce" />
+            <label for="tomate" class="label-for-sauce">Tomate</label>
+
+            <input type="checkbox" id="creme" class="sauce" />
+            <label for="creme" class="label-for-sauce">Crème</label>
+
+            <input type="checkbox" id="fromage" class="ingre" />
+            <label for="fromage" class="label-for-ingre">Fromage</label>
+
+            <input type="checkbox" id="oignon" class="ingre" />
+            <label for="oignon" class="label-for-ingre">Oignon</label>
+
+            <input type="checkbox" id="poivron" class="ingre" />
+            <label for="poivron" class="label-for-ingre">Poivron</label>
+
+            <input type="checkbox" id="champignon" class="ingre" />
+            <label for="champignon" class="label-for-ingre">Champignon</label>
+
+            <input type="checkbox" id="lardon" class="ingre" />
+            <label for="lardon" class="label-for-ingre">Lardon</label>
+
+            <input type="checkbox" id="pepperoni" class="ingre" />
+            <label for="pepperoni" class="label-for-ingre">Pepperoni</label>
+        </div>
+
+    </main content>
+
+    <footer>
+        <p><h2>Pizza Personalizzata</h2></p><br>
+        <p>84 Piazza San Marco 30124 Venezia</p><br>
+        <p>Pour votre santé, manger au moins 5 fruits et légumes par jour</p>
+        <a  id="f1" href="https://mangerbouger.fr">www.mangerbouger.fr</a>
+    </footer>
+    
+</body>
+</html>
